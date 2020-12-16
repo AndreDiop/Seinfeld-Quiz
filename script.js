@@ -15,7 +15,7 @@ var questionBank = [
   {
     question: "A condition in an If/Else statement is enclosed in...",
     answerChoices: [
-      "a. Quotations');",
+      "a. Quotations;",
       "b. Curly Braces",
       "c. Parenthesis",
       "d. Square Brackets",
@@ -56,6 +56,9 @@ var questionBank = [
   },
 ];
 
+// for (var i = 0; i < questionBank.length; i++) {
+//   console.log(questionBank);
+// }
 
 startButton.addEventListener("click", function () {
   // console.log("Clicked");
@@ -63,18 +66,20 @@ startButton.addEventListener("click", function () {
   quizPage.setAttribute("class", "");
 });
 for (var i = 0; i < questionBank.length; i++) {
+ console.log(questionBank[i]);
+ 
   //   // 1. Create an element.
-  var questions = questionEl;
-  //   // 2. Add content
-  questions.textContent = questionBank[i];
-  //   // 3. Append to an existing element.
-  questionEl.append(questions);
-  console.log(questions);
+  // var questions = question
+  // //   // 2. Add content
+  // questions.textContent = questionBank[i];
+  // //   // 3. Append to an existing element.
+  // questionEl.append(questions);
+  // console.log(questions);
 }
 
-answerButtons.addEventListener("click", function () {
-  var element = event.target;
-  if (element.matches("button")) {
-    checkAnswer(element.value);
-  }
-});
+// answerButtons.addEventListener("click", function () {
+//   var element = event.target;
+//   if (element.matches("button")) {
+//     checkAnswer(element.value);
+//   }
+// });

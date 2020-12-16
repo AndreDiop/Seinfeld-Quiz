@@ -15,14 +15,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- header -->
     <header>
       <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">High Scores</a>
         <div>Time Left: <span id="time">60</span></div>
       </nav>
     </header>
-    <!-- landing page -->
     <div class="landing-page" id="landing">
       <div class="container" <div class="row">
         <div class="col-md-8">
@@ -47,29 +45,59 @@
         </div>
       </div>
     </div>
-    <!-- quiz page -->
     <div class="quiz-page hide" id="quiz">
       <div class="container">
         <div class="row">
           <div class="col-md-6" id="questionBox">
-            <h3 id="question"></h3>
+            <h3>Commonly used data types DO NOT include:</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <div class="buttons">
-              <button id="ans-1" value="0"></button>
-              <button id="ans-2" value="1"></button>
-              <button id="ans-3" value="2"></button>
-              <button id="ans-4" value="3"></button>
-            </div>
+          <div class="col-md-6" id="answerBox">
+            <ul>
+              <li>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  style="margin: 5px"
+                >
+                  Quotations
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  style="margin: 5px"
+                >
+                  Curly Braces
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  style="margin: 5px"
+                >
+                  Parenthesis
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  style="margin: 5px"
+                >
+                  Square Brackets
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
     <div class="timer-page"></div>
     <div class="scores-page"></div>
-
     <script src="script.js"></script>
   </body>
 </html>
