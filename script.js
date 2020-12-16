@@ -3,6 +3,7 @@ var quizPage = document.getElementById("quiz");
 var timerPage = document.querySelector("#timer");
 var scorePage = document.querySelector("score-container");
 var startButton = document.getElementById("startButton");
+var submitButton = document.getElementById("submit");
 var answerButtons = document.querySelector("div.buttons");
 var questionEl = document.getElementById("question");
 var questionIndex = 0;
@@ -65,21 +66,11 @@ startButton.addEventListener("click", function () {
   landingPage.setAttribute("class", "hide");
   quizPage.setAttribute("class", "");
 });
-for (var i = 0; i < questionBank.length; i++) {
- console.log(questionBank[i]);
- 
-  //   // 1. Create an element.
-  // var questions = question
-  // //   // 2. Add content
-  // questions.textContent = questionBank[i];
-  // //   // 3. Append to an existing element.
-  // questionEl.append(questions);
-  // console.log(questions);
-}
+// for (var i = 0; i < questionBank.length; i++) {
 
-// answerButtons.addEventListener("click", function () {
-//   var element = event.target;
-//   if (element.matches("button")) {
-//     checkAnswer(element.value);
-//   }
-// });
+// }
+
+submitButton.addEventListener("click", function () {
+  landingPage.setAttribute("class", "hide");
+  quizPage.setAttribute("class", "hide");
+});
