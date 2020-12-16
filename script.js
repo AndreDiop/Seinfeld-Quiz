@@ -1,16 +1,12 @@
 var landingPage = document.getElementById("landing");
 var quizPage = document.getElementById("quiz");
-var timerPage = document.querySelector("#timer container");
+var timerPage = document.querySelector("#timer");
 var scorePage = document.querySelector("score-container");
 var startButton = document.getElementById("startButton");
-
-startButton.addEventListener("click", function () {
-  // console.log("Clicked");
-  landingPage.setAttribute("class", "hide");
-  quizPage.setAttribute("class", "");
-});
-
-var questionsIndex = [
+var answerButtons = document.querySelector("div.buttons");
+var questionEl = document.getElementById("question");
+var questionIndex = 0;
+var questionBank = [
   {
     question: "Commonly used data types DO NOT include...",
     answerChoices: ["a. Strings", "b. Boolean", "c. Alerts", "d. Numbers"],
@@ -60,6 +56,25 @@ var questionsIndex = [
   },
 ];
 
-for (var i = 0; i < questionsIndex.length; i++) {
-  console.log(questionsIndex);
+
+startButton.addEventListener("click", function () {
+  // console.log("Clicked");
+  landingPage.setAttribute("class", "hide");
+  quizPage.setAttribute("class", "");
+});
+for (var i = 0; i < questionBank.length; i++) {
+  //   // 1. Create an element.
+  var questions = questionEl;
+  //   // 2. Add content
+  questions.textContent = questionBank[i];
+  //   // 3. Append to an existing element.
+  questionEl.append(questions);
+  console.log(questions);
 }
+
+answerButtons.addEventListener("click", function () {
+  var element = event.target;
+  if (element.matches("button")) {
+    checkAnswer(element.value);
+  }
+});

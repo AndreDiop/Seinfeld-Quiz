@@ -9,14 +9,12 @@ ul {
 }
 
 .col-md-8,
-#answerBox,
-#questionBox {
+.buttons,
+#question {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .hide {
   display: none;
