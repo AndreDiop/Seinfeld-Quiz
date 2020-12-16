@@ -10,13 +10,12 @@ ul {
 
 .col-md-8,
 #answerBox,
-#questionBox {
+#questionBox,
+#reset {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .hide {
   display: none;

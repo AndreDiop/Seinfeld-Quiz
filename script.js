@@ -1,9 +1,11 @@
 var landingPage = document.getElementById("landing");
 var quizPage = document.getElementById("quiz");
 var timerPage = document.querySelector("#timer");
-var scorePage = document.querySelector("score-container");
+var scorePage = document.getElementById("scores");
 var startButton = document.getElementById("startButton");
 var submitButton = document.getElementById("submit");
+var resetButton = document.getElementById("reset");
+var showScores = document.getElementById("high");
 var answerButtons = document.querySelector("div.buttons");
 var questionEl = document.getElementById("question");
 var questionIndex = 0;
@@ -73,4 +75,17 @@ startButton.addEventListener("click", function () {
 submitButton.addEventListener("click", function () {
   landingPage.setAttribute("class", "hide");
   quizPage.setAttribute("class", "hide");
+  scorePage.setAttribute("class", "");
+});
+
+showScores.addEventListener("click", function () {
+  landingPage.setAttribute("class", "hide");
+  quizPage.setAttribute("class", "hide");
+  scorePage.setAttribute("class", "");
+});
+
+resetButton.addEventListener("click", function () {
+  landingPage.setAttribute("class", "");
+  quizPage.setAttribute("class", "hide");
+  scorePage.setAttribute("class", "hide");
 });

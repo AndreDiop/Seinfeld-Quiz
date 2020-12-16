@@ -1,4 +1,4 @@
-# A Timed Quiz
+# A Timed Quiz alpha build
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@
 
 # About
 
-Utilizing knowledge of elements of Javascript such as eventlisteners, DOM, getters, setters; I was able to create a timed quiz that presents users with a set of questions that they must complete within a set of time. There will be a time penalty for each wrong answer and at the end of the quiz, user will be given the opportunity to enter their name and  score will be entered on a high score list.
+Utilizing knowledge of elements of Javascript such as eventlisteners, DOM, getters, setters; I attempted to create a timed quiz that presents users with a set of questions that they must complete within a set of time. There should be a time penalty for each wrong answer and at the end of the quiz, user will be given the opportunity to enter their name and social media handle to be displayed on a high score list.
 
 ## Access
 
@@ -33,7 +33,7 @@ https://github.com/AndreDiop/timed-quiz
 ```
 
 ## Usage
-
+This app is still in the alpha stage and does not have full functionality yet. Additions to be made include, question functionality, adding timer functionality and adding a user input for them to enter high scores
 
 
 ## Screenshots
@@ -41,23 +41,29 @@ https://github.com/AndreDiop/timed-quiz
 These screen shots show the timed quiz in different states
 
 ```bash
-Users are prompted to enter how many characters between 8 - 128 they need
+Users are welcomed with this page
 ```
 
-![Screenshot of Timed Game]()
+![Screenshot of Timed Game](Welcome.png)
 
 ```bash
-Users are presented with a password to use after clicking generate
+Users are presented with multiple choice questions
 
 ```
-![Screenshot of Timed Game]()
+![Screenshot of Timed Game](Questions.png)
 
+```bash
+Users are presented with high score screen upon completion
+
+```
+
+![Screenshot of Timed Game](High Scores.png)
 
 ## Contributing
 
-This app couldn't have been built with out fellow students, instructors, tutors, and TA's of the GT coding bootcamp.
+This app could have been built with the help of fellow students, instructors, tutors, and TA's of the GT coding bootcamp.
 
-I'm not taking requests at this time however, please reach out to me if you see ways that I can improve upon my code.
+Please reach out to me if you see ways that I can improve upon my code and complete the functionality.
 
 
 ## License

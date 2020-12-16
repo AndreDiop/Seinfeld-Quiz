@@ -17,7 +17,7 @@
   <body>
     <header>
       <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">High Scores</a>
+        <a class="navbar-brand" id="high" href="#">High Scores</a>
         <div>Time Left: <span id="time">60</span></div>
       </nav>
     </header>
@@ -104,10 +104,47 @@
         </div>
       </div>
     </div>
+    <div class="hide" id="scores">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Larry</td>
+            <td>June</td>
+            <td>@unclelarry</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Bird</td>
+            <td>Man</td>
+            <td>@5starstunna</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Madonna</td>
+            <td>@Madonna</td>
+          </tr>
+        </tbody>
+      </table>
+      <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        id="reset"
+        style=""
+      >
+        Start Over
+      </button>
+    </div>
 
-    <div class="timer-page"></div>
-
-    <div class="scores-page"></div>
+    <div class="timer"></div>
     <script src="script.js"></script>
   </body>
 </html>
